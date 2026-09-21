@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>90 Barber Shop | Your hairstyle, our lifestyle</title>
+  <meta name="description" content="Neighbourhood barbershop for sharp cuts, clean shaves and good conversation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800;900&family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand brand--bar" href="index.html" aria-label="90 Barber Shop, home"><span aria-hidden="true">90</span></a>
+      <nav class="nav-menu" id="site-menu" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="nav-brand-item"><a class="brand" href="index.html" aria-label="90 Barber Shop, home"><span aria-hidden="true">90</span></a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--accent btn--sm nav-cta" href="#" data-book-link>Book Now</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero--video" aria-labelledby="hero-title">
+      <h1 class="sr-only" id="hero-title">90 Barber Shop: your hairstyle, our lifestyle</h1>
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/intro-poster.jpg" aria-hidden="true" tabindex="-1">
+        <source src="video/intro.mp4" type="video/mp4">
+      </video>
+      <a class="btn btn--accent hero-book" href="#" data-book-link>Book now</a>
+      <button class="hero-pause" type="button" aria-label="Pause background video" aria-pressed="false">
+        <svg class="i-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+        <svg class="i-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+      </button>
+    </section>
+
+    <section class="section" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="collage" aria-hidden="true">
+          <div class="c1 art-window"></div>
+          <div class="c2 art-dark"></div>
+          <div class="c3 art-warm"></div>
+        </div>
+        <div class="about-copy">
+          <p class="kicker">A bit</p>
+          <h2 id="about-title">About us</h2>
+          <p>We're a neighbourhood barbershop built around sharp cuts, clean shaves and easy conversation. Every appointment gets the time it needs, from a quick tidy-up to a full hot towel shave.</p>
+          <p>Walk in, sit back, and leave looking like yourself on your best day.</p>
+          <a class="btn btn--curl" href="about.html">View More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="services-title" style="padding-top:0">
+      <div class="container">
+        <h2 class="section-title" id="services-title">Our <span>Services</span></h2>
+        <div class="services-grid">
+          <article class="service">
+            <div class="service-media"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="36" r="6"/><circle cx="36" cy="36" r="6"/><path d="M16 31L38 8M32 31L10 8"/></svg></div>
+            <div class="service-body"><h3>Classic Haircut</h3><p>Scissor or clipper cut, finished with a neck shave and style.</p></div>
+          </article>
+          <article class="service">
+            <div class="service-media"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="12" width="38" height="11" rx="3"/><path d="M11 23v11M18 23v11M25 23v11M32 23v11M39 23v11"/></svg></div>
+            <div class="service-body"><h3>Beard Trim</h3><p>Shaped, lined up and conditioned to suit your face.</p></div>
+          </article>
+          <article class="service">
+            <div class="service-media"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="27" width="26" height="9" rx="4.5"/><path d="M28 29L43 15v11L30 36"/></svg></div>
+            <div class="service-body"><h3>Hot Towel Shave</h3><p>A slow straight-razor shave with warm towels and aftershave balm.</p></div>
+          </article>
+          <article class="service">
+            <div class="service-media"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 6c8 10 12 16 12 22a12 12 0 0 1-24 0c0-6 4-12 12-22z"/></svg></div>
+            <div class="service-body"><h3>Wash &amp; Style</h3><p>Shampoo, scalp massage and blow-dry with product.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="team-title" style="padding-top:0">
+      <div class="container">
+        <h2 class="section-title" id="team-title">Meet Our <span>Team</span></h2>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous team members">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <div class="carousel-track" tabindex="0" role="region" aria-label="Team members"></div>
+          <button class="carousel-btn next" type="button" aria-label="Next team members">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <noscript><p class="page-intro">Turn on JavaScript to see the team, or visit the <a href="team.html">team page</a>.</p></noscript>
+        <div class="center-action"><a class="btn" href="team.html">View Team</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="90 Barber Shop, home"><span aria-hidden="true">90</span></a>
+          <p>Sharp cuts, clean shaves and easy conversation.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-title">Visit</h2>
+          <p>12 Sample Street<br>Your City, ST 00000</p>
+          <p><a href="tel:+10000000000">(000) 000-0000</a><br><a href="mailto:hello@yourbarbershop.com">hello@yourbarbershop.com</a></p>
+        </div>
+        <div>
+          <h2 class="footer-title">Hours</h2>
+          <ul>
+            <li>Mon to Fri: 9am to 7pm</li>
+            <li>Saturday: 9am to 6pm</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> 90 Barber Shop. All rights reserved.</span>
+        <span><a href="#" data-book-link>Book a chair</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>

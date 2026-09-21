@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Team | 90 Barber Shop</title>
+  <meta name="description" content="Meet the barbers at 90 Barber Shop.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800;900&family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand brand--bar" href="index.html" aria-label="90 Barber Shop, home"><span aria-hidden="true">90</span></a>
+      <nav class="nav-menu" id="site-menu" aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="nav-brand-item"><a class="brand" href="index.html" aria-label="90 Barber Shop, home"><span aria-hidden="true">90</span></a></li>
+          <li><a href="team.html" aria-current="page">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--accent btn--sm nav-cta" href="#" data-book-link>Book Now</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu"><span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Replace the label with a team photo: set --team-photo in style.css -->
+    <section class="team-banner" aria-label="Team photo">
+      <p>Team Pic</p>
+    </section>
+
+    <section class="section" style="padding-top:clamp(2.5rem,5vw,4rem)">
+      <div class="container">
+        <h1 class="page-title page-title--teal">The Team</h1>
+        <div class="team-grid" id="team-grid"></div>
+        <noscript><p class="page-intro">Turn on JavaScript to see the team.</p></noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="90 Barber Shop, home"><span aria-hidden="true">90</span></a>
+          <p>Sharp cuts, clean shaves and easy conversation.</p>
+        </div>
+        <div>
+          <h2 class="footer-title">Explore</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-title">Visit</h2>
+          <p>12 Sample Street<br>Your City, ST 00000</p>
+          <p><a href="tel:+10000000000">(000) 000-0000</a><br><a href="mailto:hello@yourbarbershop.com">hello@yourbarbershop.com</a></p>
+        </div>
+        <div>
+          <h2 class="footer-title">Hours</h2>
+          <ul>
+            <li>Mon to Fri: 9am to 7pm</li>
+            <li>Saturday: 9am to 6pm</li>
+            <li>Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> 90 Barber Shop. All rights reserved.</span>
+        <span><a href="#" data-book-link>Book a chair</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
