@@ -1,8 +1,3 @@
-/* =====================================================================
-   90 Barber Shop – script.js
-   Handles: mobile menu, team data + rendering, team carousel,
-   contact form validation, footer year.
-   ===================================================================== */
 (() => {
   "use strict";
 
