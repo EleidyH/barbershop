@@ -23,15 +23,14 @@
   // photo: path to an image (e.g. "images/marcus.jpg"). Leave "" to show initials.
   // Set a social link to "" to hide that icon.
   const TEAM = [
-    { name: "Marcus Bell",     role: "Master Barber",       photo: "", instagram: "#", facebook: "#", x: "#" },
-    { name: "Diego Alvarez",   role: "Senior Barber",       photo: "", instagram: "#", facebook: "#", x: "#" },
-    { name: "Tariq Hassan",    role: "Barber",              photo: "", instagram: "#", facebook: "#", x: "#" },
-    { name: "Jonah Whitfield", role: "Beard Specialist",    photo: "", instagram: "#", facebook: "#", x: "#" },
-    { name: "Kenji Mori",      role: "Barber",              photo: "", instagram: "#", facebook: "#", x: "#" },
-    { name: "Andre Lewis",     role: "Colour & Styling",    photo: "", instagram: "#", facebook: "#", x: "#" },
-    { name: "Sam Okafor",      role: "Barber",              photo: "", instagram: "#", facebook: "#", x: "#" },
-    { name: "Luca Ferrari",    role: "Apprentice",          photo: "", instagram: "#", facebook: "#", x: "#" },
-    { name: "Ravi Patel",      role: "Front Desk & Bookings", photo: "", instagram: "#", facebook: "#", x: "#" },
+    { name: "Tiago",     role: "Boss/Barber",       photo: "images/Tiago2.jpg", instagram: "#", facebook: "#", x: "#" },
+    { name: "Samuel",   role: "Barber",       photo: "images/Samuel.jpg", instagram: "#", facebook: "#", x: "#" },
+    { name: "Dave",    role: "Barber",              photo: "images/Dave.jpg", instagram: "#", facebook: "#", x: "#" },
+    { name: "Rey", role: "Beard Specialist",    photo: "images/rey.jpg", instagram: "#", facebook: "#", x: "#" },
+    { name: "",      role: "Barber",              photo: "images/guy2.jpg", instagram: "#", facebook: "#", x: "#" },
+    { name: "",     role: "Colour & Styling",    photo: "images/guy.jpg", instagram: "#", facebook: "#", x: "#" },
+    { name: "John",      role: "Barber",              photo: "images/John.jpg", instagram: "#", facebook: "#", x: "#" },
+    { name: "Guy",    role: "Apprentice",          photo: "", instagram: "#", facebook: "#", x: "#" },
   ];
 
   const $  = (sel, root = document) => root.querySelector(sel);

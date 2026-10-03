@@ -33,7 +33,7 @@
   --none: linear-gradient(transparent, transparent);
   --hero-photo: var(--none);
   --contact-photo: var(--none);
-  --team-photo: var(--none);
+  --team-photo: url("images/teampic.jpg");
   --about-photo-1: var(--none);
   --about-photo-2: var(--none);
   --about-photo-3: var(--none);
@@ -108,7 +108,7 @@ p { margin: 0 0 1rem; }
 .brand { display: inline-block; text-decoration: none; line-height: 1; }
 .brand span {
   font: 900 2rem/1 var(--font-head); letter-spacing: -.09em; padding-right: .09em;
-  background: linear-gradient(135deg, #ff86e9 10%, #a94bdc 90%);
+  background: linear-gradient(135deg, #066579 10%, #087b91 90%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .brand--bar, .nav-toggle { display: none; }
@@ -262,7 +262,7 @@ p { margin: 0 0 1rem; }
 
 /* ---------- home: services ---------- */
 .services-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: clamp(1rem, 2vw, 1.75rem); margin-top: 2.5rem;
 }
 .service { display: flex; flex-direction: column; background: var(--gray-200); border-radius: 14px; overflow: hidden; }
@@ -318,7 +318,7 @@ p { margin: 0 0 1rem; }
 /* ---------- team page ---------- */
 .team-banner {
   display: grid; place-items: center; text-align: center;
-  min-height: clamp(220px, 24vw, 340px); padding: 2rem var(--gutter);
+  min-height: clamp(220px, 30vw, 560px); padding: 2rem var(--gutter);
   background: var(--team-photo), var(--gray-300);
   background-size: cover; background-position: center;
 }
