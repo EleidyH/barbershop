@@ -6,7 +6,7 @@
     // Paste a form-handling URL here (Formspree, Netlify, your own API).
     // Leave empty to open the visitor's email app instead.
     formEndpoint: "",
-    fallbackEmail: "hello@yourbarbershop.com",
+    fallbackEmail: "barbershop90.cw@gmail.com",
 
     // PASTE YOUR BOOKING LINK HERE. Every "Book Now" / "Book now" / "Book a chair"
     // button on all four pages uses it (e.g. "https://booksy.com/your-shop").
@@ -14,18 +14,22 @@
     bookingUrl: "https://www.fresha.com/a/barbershop90-willemstad-churchill-plaza-winston-churchillweg-112-mabsjhud/all-offer?menu=true",
   };
 
+  // The shop's own social links, shown as icons in the footer.
+  // Set a link to "" to hide that icon.
+  const SHOP_SOCIAL = { instagram: "https://www.instagram.com/90barbershop", facebook: "https://www.facebook.com/people/Barbershop90/61551794518023/?mibextid=LQQJ4d", tiktok: "https://www.tiktok.com/@thebarbros90" };
+
   // One place to edit the team. Used on the home page carousel and the Team page.
   // photo: path to an image (e.g. "images/marcus.jpg"). Leave "" to show initials.
   // Set a social link to "" to hide that icon.
   const TEAM = [
-    { name: "Tiago",     role: "Boss/Barber",       photo: "images/Tiago2.jpg", instagram: "#", facebook: "#", x: "#" },
-    { name: "Samuel",   role: "Barber",       photo: "images/Samuel.jpg", instagram: "#", facebook: "#", x: "#" },
-    { name: "Dave",    role: "Barber",              photo: "images/Dave.jpg", instagram: "#", facebook: "#", x: "#" },
-    { name: "Rey", role: "Beard Specialist",    photo: "images/rey.jpg", instagram: "#", facebook: "#", x: "#" },
-    { name: "",      role: "Barber",              photo: "images/guy2.jpg", instagram: "#", facebook: "#", x: "#" },
-    { name: "",     role: "Colour & Styling",    photo: "images/guy.jpg", instagram: "#", facebook: "#", x: "#" },
-    { name: "John",      role: "Barber",              photo: "images/John.jpg", instagram: "#", facebook: "#", x: "#" },
-    { name: "Guy",    role: "Apprentice",          photo: "", instagram: "#", facebook: "#", x: "#" },
+    { name: "Tiago",     role: "Boss/Barber",       photo: "images/Tiago2.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@tiago90lifestyle" },
+    { name: "Samuel",   role: "Barber",       photo: "images/Samuel.jpg", instagram: "#", facebook: "#", tiktok: "#" },
+    { name: "Dave",    role: "Barber",              photo: "images/Dave.jpg", instagram: "#", facebook: "#", tiktok: "#" },
+    { name: "Rey", role: "Barber",    photo: "images/rey.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@r3yblendsz" },
+    { name: "Ronal",      role: "Barber",              photo: "images/guy2.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@sanchesz310" },
+    { name: "Rensly",     role: "Barber",    photo: "images/guy.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@renslynewwave" },
+    { name: "John",      role: "Barber",              photo: "images/John.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@jonathan.__l02" },
+    { name: "Guy",    role: "Barber",          photo: "", instagram: "#", facebook: "#", tiktok: "#" },
   ];
 
   const $  = (sel, root = document) => root.querySelector(sel);
@@ -40,13 +44,23 @@
       '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>',
     facebook:
       '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8V6.5c0-.7.3-1 1-1h2V2h-3c-3 0-4.5 1.8-4.5 4.4V8H7v3.5h2.5V22H14V11.5h2.8L17.3 8z"/></svg>',
-    x:
-      '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
+    tiktok:
+      '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 2h-3.2v13.9a2.8 2.8 0 1 1-2.3-2.76v-3.26a6.05 6.05 0 1 0 5.5 6.02V9.1a7.9 7.9 0 0 0 4.6 1.47V7.37A4.78 4.78 0 0 1 16.5 2z"/></svg>',
+      
   };
-  const NETWORKS = { instagram: "Instagram", facebook: "Facebook", x: "X" };
+  const NETWORKS = { instagram: "Instagram", facebook: "Facebook", tiktok: "TikTok" };
 
   /* ---------- footer year ---------- */
   document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
+
+  /* ---------- footer: shop social links ---------- */
+  const shopSocial = $("[data-shop-social]");
+  if (shopSocial) {
+    shopSocial.innerHTML = Object.keys(NETWORKS)
+      .filter((k) => SHOP_SOCIAL[k])
+      .map((k) => `<a href="${esc(SHOP_SOCIAL[k])}" target="_blank" rel="noopener noreferrer" aria-label="90 Barber Shop on ${NETWORKS[k]}">${ICONS[k]}</a>`)
+      .join("");
+  }
 
   /* ---------- Book Now links: one place to change (CONFIG.bookingUrl) ---------- */
   document.querySelectorAll("[data-book-link]").forEach((a) => {
@@ -111,7 +125,7 @@
         : `<span class="initials" aria-hidden="true">${esc(initials(m.name))}</span>`;
       const links = Object.keys(NETWORKS)
         .filter((k) => m[k])
-        .map((k) => `<a href="${esc(m[k])}" aria-label="${esc(m.name)} on ${NETWORKS[k]}">${ICONS[k]}</a>`)
+        .map((k) => `<a href="${esc(m[k])}" target="_blank" rel="noopener noreferrer" aria-label="${esc(m.name)} on ${NETWORKS[k]}">${ICONS[k]}</a>`)
         .join("");
       return `
         <article class="member">

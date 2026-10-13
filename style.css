@@ -31,12 +31,12 @@
 
   /* photo slots (swap for url("images/...") ) */
   --none: linear-gradient(transparent, transparent);
-  --hero-photo: var(--none);
-  --contact-photo: var(--none);
+  --hero-photo: url("images/pic4.png");
+  --contact-photo: url("images/pic4.png");
   --team-photo: url("images/teampic.jpg");
-  --about-photo-1: var(--none);
-  --about-photo-2: var(--none);
-  --about-photo-3: var(--none);
+  --about-photo-1: url("images/pic1.png");
+  --about-photo-2: url("images/pic2.png");
+  --about-photo-3: url("images/pic3.png");
 }
 
 /* ---------- base ---------- */
@@ -128,7 +128,7 @@ p {
 }
 
 .btn--pill { 
-  order-radius: 999px; 
+  border-radius: 999px; 
 }
 
 
@@ -488,7 +488,7 @@ a.info-tile:hover, a.info-tile:focus-visible { box-shadow: inset 0 0 0 2px var(-
 
 .map-label svg { 
   width: 36px; height: 36px; color: var(--teal-600); 
-}
+} 
 
 .contact-form h2 { 
   font-size: clamp(2rem, 3.6vw, 2.8rem); font-weight: 800; margin-bottom: .75rem; 
@@ -580,6 +580,14 @@ a.info-tile:hover, a.info-tile:focus-visible { box-shadow: inset 0 0 0 2px var(-
 .footer-brand p { 
   max-width: 32ch; margin-top: .9rem; 
 }
+.footer-social { display: flex; gap: .6rem; margin-top: 1.1rem; }
+.footer-social a {
+  width: 36px; height: 36px; display: grid; place-items: center; flex: none;
+  background: rgba(255, 255, 255, .1); color: #fff; border-radius: 50%;
+  transition: background-color .2s ease;
+}
+.footer-social a:hover { background: var(--teal-600); }
+.footer-social svg { width: 17px; height: 17px; }
 
 .footer-bottom {
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
