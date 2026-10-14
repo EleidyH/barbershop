@@ -22,14 +22,14 @@
   // photo: path to an image (e.g. "images/marcus.jpg"). Leave "" to show initials.
   // Set a social link to "" to hide that icon.
   const TEAM = [
-    { name: "Tiago",     role: "Boss/Barber",       photo: "images/Tiago2.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@tiago90lifestyle" },
-    { name: "Samuel",   role: "Barber",       photo: "images/Samuel.jpg", instagram: "#", facebook: "#", tiktok: "#" },
-    { name: "Dave",    role: "Barber",              photo: "images/Dave.jpg", instagram: "#", facebook: "#", tiktok: "#" },
-    { name: "Rey", role: "Barber",    photo: "images/rey.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@r3yblendsz" },
-    { name: "Ronal",      role: "Barber",              photo: "images/guy2.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@sanchesz310" },
-    { name: "Rensly",     role: "Barber",    photo: "images/guy.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@renslynewwave" },
-    { name: "John",      role: "Barber",              photo: "images/John.jpg", instagram: "#", facebook: "#", tiktok: "https://www.tiktok.com/@jonathan.__l02" },
-    { name: "Guy",    role: "Barber",          photo: "", instagram: "#", facebook: "#", tiktok: "#" },
+    { name: "Tiago",     role: "Boss/Barber",       photo: "images/Tiago2.jpg", instagram: "https://www.instagram.com/tia90b", tiktok: "https://www.tiktok.com/@tiago90lifestyle" },
+    { name: "Samuel",   role: "Barber",       photo: "images/Samuel.jpg"},
+    { name: "Dave",    role: "Barber",              photo: "images/Dave.jpg", instagram: "https://www.instagram.com/dave_barbero", tiktok: "https://www.tiktok.com/@dave_t_b_" },
+    { name: "Rey", role: "Barber",    photo: "images/rey.jpg", instagram: "https://www.instagram.com/r3yBlendsz", tiktok: "https://www.tiktok.com/@r3yblendsz" },
+    { name: "Ronal",      role: "Barber",              photo: "images/guy2.jpg", instagram: "https://www.instagram.com/ronal_sanchesz", tiktok: "https://www.tiktok.com/@sanchesz310" },
+    { name: "Rensly",     role: "Barber",    photo: "images/guy.jpg", instagram: "https://www.instagram.com/renslynewwave", tiktok: "https://www.tiktok.com/@renslynewwave" },
+    { name: "John",      role: "Barber",              photo: "images/John.jpg", instagram: "https://instagram.com/jonathan.__l02",  tiktok: "https://www.tiktok.com/@jonathan.__l02" },
+    { name: "Guy",    role: "Barber",          photo: "", instagram: "#", tiktok: "#" },
   ];
 
   const $  = (sel, root = document) => root.querySelector(sel);
