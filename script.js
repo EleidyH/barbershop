@@ -29,7 +29,7 @@
     { name: "Ronal",      role: "Barber",              photo: "images/guy2.jpg", instagram: "https://www.instagram.com/ronal_sanchesz", tiktok: "https://www.tiktok.com/@sanchesz310" },
     { name: "Rensly",     role: "Barber",    photo: "images/guy.jpg", instagram: "https://www.instagram.com/renslynewwave", tiktok: "https://www.tiktok.com/@renslynewwave" },
     { name: "John",      role: "Barber",              photo: "images/John.jpg", instagram: "https://instagram.com/jonathan.__l02",  tiktok: "https://www.tiktok.com/@jonathan.__l02" },
-    { name: "Guy",    role: "Barber",          photo: "", instagram: "#", tiktok: "#" },
+    /*{ name: "Guy",    role: "Barber",          photo: "", instagram: "#", tiktok: "#" },*/
   ];
 
   const $  = (sel, root = document) => root.querySelector(sel);
